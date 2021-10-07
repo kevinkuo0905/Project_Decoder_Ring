@@ -22,7 +22,7 @@ const substitutionModule = (function () {
     }
     return result
   }
-console.log(substitution("elp xhm xf mbymwwmfj dne", "xoyqmcgrukswaflnthdjpzibev",false))
+
   return {
     substitution,
   }
