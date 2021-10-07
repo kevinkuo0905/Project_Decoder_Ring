@@ -6,7 +6,7 @@
 const substitutionModule = (function () {
   const alphabet = "abcdefghijklmnopqrstuvwxyz"
   function substitution(input, key, encode = true) {
-    if (key.length != 26) return false
+    if (!key || key.length != 26) return false
     for (let i = 0; i < 26; i++) {
       for (let j = i + 1; j < 26; j++) {
         if (key[i] == key[j]) return false
@@ -22,7 +22,6 @@ const substitutionModule = (function () {
     }
     return result
   }
-console.log(substitution("elp xhm xf mbymwwmfj dne", "xoyqmcgrukswaflnthdjpzibev",false))
   return {
     substitution,
   }
